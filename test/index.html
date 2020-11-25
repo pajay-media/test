@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- modal boxes goes here for signup and login -->
+
+<!-- login modal here -->
+<div id="modal_1" class="modal_1">
+<div id="modal1_c" class="modal1_c">
+	<span class="close" onclick="closes('modal_1')">&times;</span>
+	<h2>Sign In</h2>
+<div class="">
+  <div class="content">
+  <label for="username">Username</label>
+  <input type="text" id="username" placeholder="username"><br>
+</div>
+
+<div class="content">
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="password"><br>
+</div>
+
+<!-- <div class="content">
+  <p>I am a</p>
+<select id="cate" name="">
+  <option value=""></option>
+  <option value="mentor">Mentor</option>
+  <option value="mentee">Mentee</option>
+</select>
+</div> -->
+
+</div>
+
+<div id="resp"></div>
+<button id="login" class="login">Login</button>
+
+</div>
+</div>
+
+
+<!-- signup modal here -->
+<div id="modal_2" class="modal_1">
+<div id="modal1_c" class="modal1_c">
+	<span class="close" onclick="closes('modal_2')">&times;</span>
+	<h2>Sign Up</h2>
+<div class="">
+  <div class="content">
+  <label for="fullname">Full Name</label>
+  <input type="text" id="fullname" placeholder="fullname" name="fullname">
+</div>
+
+<div class="content">
+  <label for="email">Email Address</label>
+  <input type="email" id="email" placeholder="Email Address" name='email'>
+</div>
+
+<div class="content">
+  <label for="user">Username</label>
+  <input type="text" id="user" name='user' placeholder="Select a Username">
+</div>
+
+<div class="content">
+  <label for="pass">Password</label>
+  <input type="password" id="pass" placeholder="password" name="pass">
+</div>
+
+<div class="content">
+  <label for="cpassword">Confirm Password</label>
+  <input type="password" id="cpass" placeholder="Confirm password" name="cpassword">
+</div>
+
+<div class="content">
+  <p>I want to be a </p>
+<select id="category" name="">
+  <option value=""></option>
+  <option value="mentor">Mentor</option>
+  <option value="mentee">Mentee</option>
+</select>
+</div>
+
+</div>
+
+<div id="resp1"></div>
+
+<div id="sign">
+<button id="SignUp" class="Sign Up">Sign Up</button>
+</div>
+</div>
+</div>
+
+
+  <!-- main section here to sign up orn login -->
+<section id="main" class="main">
+<div class="main_word">
+  <h1>Welcome, kindly, choose one of the options below to proceed </h1>
+</div>
+
+  <div class="main_div" id="main_div">
+    <div class="buttonOne" id="buttonOne">
+      <button type="button" name="button" id="login" onclick="display('modal_1')">Login</button>
+    </div>
+
+    <div class="buttonTwo" id="buttonTwo">
+      <button type="button" name="button" onclick="display('modal_2')">Sign Up</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- styling js here  -->
+  <script type="text/javascript" src="style.js"></script>
+
+<!-- form validation js here  -->
+<script type="text/javascript" src="action.js">
+
+</script>
+
+</body>
+</html>
